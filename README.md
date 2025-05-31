@@ -70,7 +70,7 @@ Dataset structure:
 │   ├── [llm-1]-case-02.json
 │   ├── ...
 │   ├── [llm-2]-case-01.json
-│   ├── [llm-2]-case-01.json
+│   ├── [llm-2]-case-02.json
 │   ├── ...
 └── 1.0/                        # Temperature 1.0 results
     └── [same pattern as 0.0/]

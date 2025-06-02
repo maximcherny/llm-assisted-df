@@ -24,7 +24,7 @@ llm-assisted-df-dataset/
 ├── travel_12_benign/           # Travel suite benign tasks
 ├── workspace_12_attack/        # Workspace suite injected tasks
 ├── workspace_12_benign/        # Workspace suite benign tasks
-└── gpt-4o-2024-05-13/          # GPT-4o target model exeuction results for AgentDojo
+└── gpt-4o-2024-05-13/          # GPT-4o target model execution results for AgentDojo
     ├── agent_dojo_tasks.csv    # Task definitions and metadata
     ├── banking/                # Banking suite
     ├── combined.csv            # Tasks with summaries and run_id mappings
@@ -129,13 +129,11 @@ System prompt: [Experiment 2 system prompt](prompts/experiment-2.txt)
 
 **User prompt:** `Generate the CASE-Mapping-Python code as per the instructions`
 
-#### Example inputs
-
 #### Prompt variables
 
 **{logs}:** the sequence of individual LLM invocation log entries instrumented as part of the end-to-end LLM agent task execution in the format of "[log_index]: log_message" separated by newlines. _This is the same input as used in Experiment 1._
 
-**{analysis}:** the full output of from the previous forensic analysis and classification. _This is the output from Experiment 1 for the assiciated set of **{logs}** (also called **{log_window}** in Experiment 1). At this stage, we only use the outputs produced by `claude-3.7-sonnet` LLM at temperature `0.0` for the analysed scenarios._
+**{analysis}:** the full output of from the previous forensic analysis and classification. _This is the output from Experiment 1 for the associated set of **{logs}** (also called **{log_window}** in Experiment 1). At this stage, we only use the outputs produced by `claude-3.7-sonnet` LLM at temperature `0.0` for the analysed scenarios._
 
 **{case_mapping}:** the [CASE-Mapping-Python](https://github.com/casework/CASE-Mapping-Python) context containing the reqired object, facet and relationship definitions based on the published Python source code.
 
